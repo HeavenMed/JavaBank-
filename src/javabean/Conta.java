@@ -2,10 +2,10 @@ package javabean;
 
 public class Conta {
 	
-	double saldo;
+	private double saldo;
 	int agencia;
 	int numero;
-	String titular;
+	Cliente titular = new Cliente();
 	int taxaselic;
 	
 	
@@ -28,6 +28,10 @@ public class Conta {
 	public void transferir(double valor, Conta Destino) {
 		this.saldo -= valor;
 		Destino.saldo += valor;
+	}
+	
+	public double getSaldo() {
+		return this.saldo;
 	}
 
 }
