@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Guilh
+ *
+ */
+module javabean {
+}
